@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  BAS: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, Esc, '$$mdi:apple-keyboard-command$$', LOW, ␣, ⏎, RAI, '$$mdi:apple-keyboard-option$$']
+  BAS: [↹, Q, W, F, P, B, J, L, U, Y, ;, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, R, S, T, G, M, N, E, I, O, '''', '$$mdi:apple-keyboard-shift$$',
+    Z, X, C, D, V, K, H, ',', ., /, RIGHT SHIFT, '3', RAI, ENTER, BACKSPACE, ␣, LOW]
   LOW:
   - ↹
   - '1'
@@ -40,11 +40,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-command$$
-  - {type: held}
+  - {t: ▽, type: trans}
   - ␣
   - ⏎
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:apple-keyboard-option$$', type: held}
   RAI:
   - ↹
   - '!'
@@ -65,15 +65,15 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp RCLK'
   - '-'
-  - '='
+  - '?'
   - '['
   - ']'
   - \
   - '`'
   - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - COPY
+  - PASTE
+  - Print Scrn
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - _
@@ -83,8 +83,51 @@ layers:
   - '|'
   - '~'
   - $$mdi:apple-keyboard-command$$
-  - '&studio_unlock'
+  - {t: '&studio_unlock', type: held}
   - ␣
   - ⏎
-  - {t: '&studio_unlock', type: held}
+  - '&studio_unlock'
   - $$mdi:apple-keyboard-option$$
+  '3':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - ↓
+  - →
+  - '&mmv MOVE_UP'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
