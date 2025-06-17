@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
-  BAS: [↹, Q, W, F, P, B, J, L, U, Y, ;, ⌦, '$$mdi:apple-keyboard-control$$', A, R, S, T, G, M, N, E, I, O, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, D, V, K,
-    H, ',', ., /, RIGHT SHIFT, '3', RAI, ENTER, BACKSPACE, ␣, LOW]
+  BAS: [LEFT ALT, Q, W, F, P, B, J, L, U, Y, ;, ⌦, '$$mdi:apple-keyboard-control$$', A, R, S, T, G, M, N, E, I, O, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C,
+    D, V, K, H, ',', ., /, RIGHT SHIFT, LEFT WIN, RAI, ENTER, BACKSPACE, ␣, LOW]
   LOW:
   - ↹
   - '1'
@@ -125,7 +125,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - COPY
   - PASTE
   - {t: ▽, type: trans}
